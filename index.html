@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINYuechen's Personal Website - COMP 4900</title>
+    <!-- TODO 1: Add a favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨💻</text></svg>">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <!-- TODO 2: Add a logo and a name -->
+        <a href="#" id="logo">
+        <span style="font-size: 24px; margin-right: 8px;">🌟</span>
+            <span>LINYuechen</span>
+        </a>
+        
+        <button id="anchor-list-trigger">☰</button>
+        
+        <ul id="anchor-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- TODO 3: Add the URL to your GitHub Pages repository -->
+            <li><a href="https://github.com/LINYuechen/LINYuechen.github.io">GitHub Repo</a></li>
+        </ul>
+    </nav>
+
+    <div id="section-container">
+        <!-- TODO 4: Complete the hero section -->
+        <section id="hero">
+            <div id="hero-content">
+                <h1>Hey, I'm LINYuechen</h1>
+                <p>UCFA of COMP 4900 (Fall 2025)</p>
+            </div>
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Alexandra" alt="Avatar" style="width: 150px; height: 150px; border-radius: 50%;">
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- TODO 5: Complete the about section -->
+        <section id="about">
+            <h2>About</h2>
+            <p>I am LINYuechen, a computer science student passionate about web development and design. I enjoy creating responsive websites and learning new technologies. Currently focusing on front-end development and building modern web applications.</p>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- TODO 6: Complete the skill section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div id="skill-set">
+                <div class="skill">
+                    <span>HTML</span>
+                </div>
+                <div class="skill">
+                    <span>CSS</span>
+                </div>
+                <div class="skill">
+                    <span>Python</span>
+                </div>
+                <div class="skill">
+                    <span>Git</span>
+                </div>
+                <div class="skill">
+                    <span>GitHub Pages</span>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- TODO 7: Complete the contact section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p><strong>ITSO Account:</strong> ylinga</p>
+            <p><strong>Email:</strong> ylinga@connect.ust.hk</p>
+            <p><strong>GitHub:</strong> LINYuechen</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 LINYuechen - COMP 4900 Fall 2025</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const trigger = document.getElementById('anchor-list-trigger');
+            const anchorList = document.getElementById('anchor-list');
+            
+            if (trigger && anchorList) {
+                trigger.addEventListener('click', function() {
+                    const currentDisplay = anchorList.style.display;
+                    anchorList.style.display = currentDisplay === 'block' ? 'none' : 'block';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
